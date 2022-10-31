@@ -1,0 +1,7 @@
+title: Events
+template: events/index
+layout: layout
+mount: c9ef533b-9e3e-455f-aa88-71c59231c25c
+revisions: false
+date: true
+sort_dir: asc

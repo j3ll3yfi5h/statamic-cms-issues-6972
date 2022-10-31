@@ -1,0 +1,16 @@
+{{ collection:events sort="date:asc" since="yesterday" as="entries" }}
+	{{ entries group_by="date|F" }}
+		
+		{{ groups }}
+			<div>
+				<h1>{{ group iso_format="MMMM" }}</h1>
+				<div class="u-grid u-grid--small">
+				{{ items scope="event" }}
+					{{ title|wrap:h2 }}
+				{{ /items }}
+				</div>
+			</div>
+		{{ /groups }}
+		
+	{{ /entries }}
+{{ /collection:events }}
